@@ -2,9 +2,8 @@ platform :ios, '8.0'
 
 target ‘AnimationDome’ do
 
-pod 'AFNetworking', '~> 3.1.0'
 pod 'SDWebImage', '~> 3.7.5'
-pod 'GPUImage', '~> 0.1.7'
+
 pod 'MMDrawerController', '~> 0.6.0'
 
 end
