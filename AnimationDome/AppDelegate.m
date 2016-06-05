@@ -7,8 +7,16 @@
 //
 
 #import "AppDelegate.h"
+#import <MMDrawerController/MMDrawerController.h>
+#import <MMDrawerController/UIViewController+MMDrawerController.h>
+#import "ViewController.h"
+#import "LeftViewController.h"
+#import "BaseNavigationController.h"
+
 
 @interface AppDelegate ()
+
+@property(nonatomic, strong) MMDrawerController *drawerController;
 
 @end
 
@@ -16,7 +24,22 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    UIViewController *leftView = [[LeftViewController alloc] init];
+    UIViewController *homeView = [[ViewController alloc] init];
+    
+    UINavigationController *leftNVC = [[BaseNavigationController alloc] initWithRootViewController:leftView];
+    UINavigationController *homeNVC = [[BaseNavigationController alloc] initWithRootViewController:homeView];
+    
+    self.drawerController = [[MMDrawerController alloc] initWithCenterViewController:homeNVC leftDrawerViewController:leftNVC];
+    
+    self.drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
+    self.drawerController.closeDrawerGestureModeMask = MMCloseDrawerGestureModeAll;
+    self.drawerController.maximumLeftDrawerWidth = 249;
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window setBackgroundColor:[UIColor clearColor]];
+    [self.window setRootViewController:self.drawerController];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

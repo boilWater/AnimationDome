@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		398EB796BDA45CF710821128 /* libPods-AnimationDome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 083A1B57069E9BCAEDB1FDC4 /* libPods-AnimationDome.a */; };
 		AE3CDED01CFD60880051ECA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3CDECF1CFD60880051ECA2 /* main.m */; };
 		AE3CDED31CFD60880051ECA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3CDED21CFD60880051ECA2 /* AppDelegate.m */; };
 		AE3CDED61CFD60880051ECA2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3CDED51CFD60880051ECA2 /* ViewController.m */; };
@@ -15,6 +16,9 @@
 		AE3CDEDE1CFD60880051ECA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE3CDEDC1CFD60880051ECA2 /* LaunchScreen.storyboard */; };
 		AE3CDEE91CFD60880051ECA2 /* AnimationDomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3CDEE81CFD60880051ECA2 /* AnimationDomeTests.m */; };
 		AE3CDEF41CFD60880051ECA2 /* AnimationDomeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3CDEF31CFD60880051ECA2 /* AnimationDomeUITests.m */; };
+		AE3CDF031CFFBC840051ECA2 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3CDF021CFFBC840051ECA2 /* LeftViewController.m */; };
+		AE3CDF081CFFCDBC0051ECA2 /* CALayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3CDF071CFFCDBC0051ECA2 /* CALayerViewController.m */; };
+		AE3CDF101CFFD8920051ECA2 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3CDF0F1CFFD8920051ECA2 /* BaseNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		083A1B57069E9BCAEDB1FDC4 /* libPods-AnimationDome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationDome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		826BAC2026B07F9F3956BE3B /* Pods-AnimationDome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationDome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationDome/Pods-AnimationDome.debug.xcconfig"; sourceTree = "<group>"; };
 		AE3CDECB1CFD60880051ECA2 /* AnimationDome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationDome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3CDECF1CFD60880051ECA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE3CDED11CFD60880051ECA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +57,14 @@
 		AE3CDEEF1CFD60880051ECA2 /* AnimationDomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationDomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3CDEF31CFD60880051ECA2 /* AnimationDomeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationDomeUITests.m; sourceTree = "<group>"; };
 		AE3CDEF51CFD60880051ECA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE3CDF011CFFBC840051ECA2 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftViewController.h; path = View/LeftViewController.h; sourceTree = "<group>"; };
+		AE3CDF021CFFBC840051ECA2 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftViewController.m; path = View/LeftViewController.m; sourceTree = "<group>"; };
+		AE3CDF051CFFC9C90051ECA2 /* Animation-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Animation-PrefixHeader.pch"; sourceTree = "<group>"; };
+		AE3CDF061CFFCDBC0051ECA2 /* CALayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CALayerViewController.h; path = View/CALayerView/CALayerViewController.h; sourceTree = "<group>"; };
+		AE3CDF071CFFCDBC0051ECA2 /* CALayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CALayerViewController.m; path = View/CALayerView/CALayerViewController.m; sourceTree = "<group>"; };
+		AE3CDF0E1CFFD8920051ECA2 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseNavigationController.h; path = Base/Controller/BaseNavigationController.h; sourceTree = "<group>"; };
+		AE3CDF0F1CFFD8920051ECA2 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseNavigationController.m; path = Base/Controller/BaseNavigationController.m; sourceTree = "<group>"; };
+		C12729BBB0FB1879BF79AAC6 /* Pods-AnimationDome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationDome.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationDome/Pods-AnimationDome.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				398EB796BDA45CF710821128 /* libPods-AnimationDome.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +93,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C26BE16E78CFC93E8559BD7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				826BAC2026B07F9F3956BE3B /* Pods-AnimationDome.debug.xcconfig */,
+				C12729BBB0FB1879BF79AAC6 /* Pods-AnimationDome.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		357335AF5BFE50DD101D5A2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				083A1B57069E9BCAEDB1FDC4 /* libPods-AnimationDome.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AE3CDEC21CFD60880051ECA2 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +117,8 @@
 				AE3CDEE71CFD60880051ECA2 /* AnimationDomeTests */,
 				AE3CDEF21CFD60880051ECA2 /* AnimationDomeUITests */,
 				AE3CDECC1CFD60880051ECA2 /* Products */,
+				0C26BE16E78CFC93E8559BD7 /* Pods */,
+				357335AF5BFE50DD101D5A2E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +135,9 @@
 		AE3CDECD1CFD60880051ECA2 /* AnimationDome */ = {
 			isa = PBXGroup;
 			children = (
+				AE3CDF0A1CFFD8260051ECA2 /* Base */,
+				AE3CDF051CFFC9C90051ECA2 /* Animation-PrefixHeader.pch */,
+				AE3CDF041CFFBCA20051ECA2 /* View */,
 				AE3CDED11CFD60880051ECA2 /* AppDelegate.h */,
 				AE3CDED21CFD60880051ECA2 /* AppDelegate.m */,
 				AE3CDED41CFD60880051ECA2 /* ViewController.h */,
@@ -140,6 +177,42 @@
 			path = AnimationDomeUITests;
 			sourceTree = "<group>";
 		};
+		AE3CDF041CFFBCA20051ECA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AE3CDF091CFFCDC50051ECA2 /* CALayerView */,
+				AE3CDF011CFFBC840051ECA2 /* LeftViewController.h */,
+				AE3CDF021CFFBC840051ECA2 /* LeftViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AE3CDF091CFFCDC50051ECA2 /* CALayerView */ = {
+			isa = PBXGroup;
+			children = (
+				AE3CDF061CFFCDBC0051ECA2 /* CALayerViewController.h */,
+				AE3CDF071CFFCDBC0051ECA2 /* CALayerViewController.m */,
+			);
+			name = CALayerView;
+			sourceTree = "<group>";
+		};
+		AE3CDF0A1CFFD8260051ECA2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AE3CDF111CFFD8980051ECA2 /* Controller */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		AE3CDF111CFFD8980051ECA2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE3CDF0E1CFFD8920051ECA2 /* BaseNavigationController.h */,
+				AE3CDF0F1CFFD8920051ECA2 /* BaseNavigationController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE3CDEF81CFD60880051ECA2 /* Build configuration list for PBXNativeTarget "AnimationDome" */;
 			buildPhases = (
+				205477E05A1E2FFDA5DFD424 /* 📦 Check Pods Manifest.lock */,
 				AE3CDEC71CFD60880051ECA2 /* Sources */,
 				AE3CDEC81CFD60880051ECA2 /* Frameworks */,
 				AE3CDEC91CFD60880051ECA2 /* Resources */,
+				329E83A1AAF4A8F8210203D2 /* 📦 Embed Pods Frameworks */,
+				CAD623F4D9FB824E91DA5D46 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,13 +341,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		205477E05A1E2FFDA5DFD424 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		329E83A1AAF4A8F8210203D2 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimationDome/Pods-AnimationDome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAD623F4D9FB824E91DA5D46 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimationDome/Pods-AnimationDome-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AE3CDEC71CFD60880051ECA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AE3CDED61CFD60880051ECA2 /* ViewController.m in Sources */,
+				AE3CDF031CFFBC840051ECA2 /* LeftViewController.m in Sources */,
+				AE3CDF101CFFD8920051ECA2 /* BaseNavigationController.m in Sources */,
 				AE3CDED31CFD60880051ECA2 /* AppDelegate.m in Sources */,
+				AE3CDF081CFFCDBC0051ECA2 /* CALayerViewController.m in Sources */,
 				AE3CDED01CFD60880051ECA2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +538,7 @@
 		};
 		AE3CDEF91CFD60880051ECA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 826BAC2026B07F9F3956BE3B /* Pods-AnimationDome.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AnimationDome/Info.plist;
@@ -422,6 +550,7 @@
 		};
 		AE3CDEFA1CFD60880051ECA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C12729BBB0FB1879BF79AAC6 /* Pods-AnimationDome.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AnimationDome/Info.plist;
@@ -498,6 +627,7 @@
 				AE3CDEFA1CFD60880051ECA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE3CDEFB1CFD60880051ECA2 /* Build configuration list for PBXNativeTarget "AnimationDomeTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +636,7 @@
 				AE3CDEFD1CFD60880051ECA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE3CDEFE1CFD60880051ECA2 /* Build configuration list for PBXNativeTarget "AnimationDomeUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +645,7 @@
 				AE3CDF001CFD60880051ECA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

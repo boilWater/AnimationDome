@@ -1,0 +1,15 @@
+//
+//  Animation-PrefixHeader.pch
+//  AnimationDome
+//
+//  Created by liangbai on 16/6/2.
+//  Copyright © 2016年 liangbai. All rights reserved.
+//
+
+#ifndef Animation_PrefixHeader_pch
+#define Animation_PrefixHeader_pch
+
+#define UISCREEN_WITH ([[UIScreen mainScreen] bounds].size.width)
+#define UISCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+
+#endif /* Animation_PrefixHeader_pch */
