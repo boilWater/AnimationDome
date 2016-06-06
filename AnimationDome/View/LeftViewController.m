@@ -10,15 +10,22 @@
 #import "Animation-PrefixHeader.pch"
 #import "CALayerView/CALayerViewController.h"
 #import "ViewController.h"
+#import "LeftViewController.h"
+#import "LeftViewCell.h"
+#import "LeftViewCell+ItemConfigureForCell.h"
+#import "ArrayDataSource.h"
 #import <MMDrawerController/MMDrawerController.h>
 #import <MMDrawerController/UIViewController+MMDrawerController.h>
 
-@interface LeftViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface LeftViewController ()<UITableViewDelegate>
 
 @property (nonatomic, strong) NSArray *array;
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) ArrayDataSource *arrayDataSource;
 
 @end
+
+static NSString * const identifer = @"LeftViewCell";
 
 @implementation LeftViewController
 
@@ -28,6 +35,7 @@
     _array = [NSArray arrayWithObjects:@"View Animation",@"CALayer Animation", nil];
     
     [self initView];
+   
     [self initTableView];
 }
 -(void)initView
@@ -35,28 +43,17 @@
     [self.view setBackgroundColor:[UIColor whiteColor]];
 }
 -(void)initTableView{
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 100, 249, UISCREEN_HEIGHT)];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 249, UISCREEN_HEIGHT)];
     self.tableView.delegate = self;
-    self.tableView.dataSource = self;
+    
+    TakenConfigureCellBlock configureCellBlock = ^(LeftViewCell *cell, id item){
+        [cell ItemConfigureForCell:item];
+    };
+    self.arrayDataSource = [[ArrayDataSource alloc] initItems:self.array cellIdentifer:identifer takenConfigureCellBlock:configureCellBlock];
+    self.tableView.dataSource = self.arrayDataSource;
+    [self.tableView registerNib:[LeftViewCell nib] forCellReuseIdentifier:identifer];
+    
     [self.view addSubview:self.tableView];
-}
-
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return _array.count;
-}
-
--(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    static NSString *indentifier = @"left_cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:indentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:indentifier];
-    }
-    cell.textLabel.text = _array[indexPath.row];
-    
-    return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -81,4 +78,5 @@
     [(UINavigationController *)self.mm_drawerController.centerViewController pushViewController:controller animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
+
 @end

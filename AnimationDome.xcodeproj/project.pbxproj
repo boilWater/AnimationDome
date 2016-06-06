@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		398EB796BDA45CF710821128 /* libPods-AnimationDome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 083A1B57069E9BCAEDB1FDC4 /* libPods-AnimationDome.a */; };
+		AE1091091D05B7C70086CFC8 /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1091081D05B7C70086CFC8 /* ArrayDataSource.m */; };
+		AE10910D1D05BEEE0086CFC8 /* LeftViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE10910B1D05BEEE0086CFC8 /* LeftViewCell.m */; };
+		AE10910E1D05BEEE0086CFC8 /* LeftViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE10910C1D05BEEE0086CFC8 /* LeftViewCell.xib */; };
+		AE1091111D05C1F40086CFC8 /* LeftViewCell+ItemConfigureForCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1091101D05C1F40086CFC8 /* LeftViewCell+ItemConfigureForCell.m */; };
 		AE3CDED01CFD60880051ECA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3CDECF1CFD60880051ECA2 /* main.m */; };
 		AE3CDED31CFD60880051ECA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3CDED21CFD60880051ECA2 /* AppDelegate.m */; };
 		AE3CDED61CFD60880051ECA2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3CDED51CFD60880051ECA2 /* ViewController.m */; };
@@ -41,6 +45,13 @@
 /* Begin PBXFileReference section */
 		083A1B57069E9BCAEDB1FDC4 /* libPods-AnimationDome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationDome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		826BAC2026B07F9F3956BE3B /* Pods-AnimationDome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationDome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationDome/Pods-AnimationDome.debug.xcconfig"; sourceTree = "<group>"; };
+		AE1091071D05B7C70086CFC8 /* ArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArrayDataSource.h; path = Base/TableDataSource/ArrayDataSource.h; sourceTree = "<group>"; };
+		AE1091081D05B7C70086CFC8 /* ArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArrayDataSource.m; path = Base/TableDataSource/ArrayDataSource.m; sourceTree = "<group>"; };
+		AE10910A1D05BEEE0086CFC8 /* LeftViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftViewCell.h; path = View/LeftViewControllerCell/LeftViewCell.h; sourceTree = "<group>"; };
+		AE10910B1D05BEEE0086CFC8 /* LeftViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftViewCell.m; path = View/LeftViewControllerCell/LeftViewCell.m; sourceTree = "<group>"; };
+		AE10910C1D05BEEE0086CFC8 /* LeftViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LeftViewCell.xib; path = View/LeftViewControllerCell/LeftViewCell.xib; sourceTree = "<group>"; };
+		AE10910F1D05C1F40086CFC8 /* LeftViewCell+ItemConfigureForCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "LeftViewCell+ItemConfigureForCell.h"; path = "View/LeftViewControllerCell/LeftViewCell+ItemConfigureForCell.h"; sourceTree = "<group>"; };
+		AE1091101D05C1F40086CFC8 /* LeftViewCell+ItemConfigureForCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "LeftViewCell+ItemConfigureForCell.m"; path = "View/LeftViewControllerCell/LeftViewCell+ItemConfigureForCell.m"; sourceTree = "<group>"; };
 		AE3CDECB1CFD60880051ECA2 /* AnimationDome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationDome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3CDECF1CFD60880051ECA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE3CDED11CFD60880051ECA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +121,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AE1091061D05B7620086CFC8 /* UITableViewData */ = {
+			isa = PBXGroup;
+			children = (
+				AE10910A1D05BEEE0086CFC8 /* LeftViewCell.h */,
+				AE10910B1D05BEEE0086CFC8 /* LeftViewCell.m */,
+				AE10910C1D05BEEE0086CFC8 /* LeftViewCell.xib */,
+				AE1091071D05B7C70086CFC8 /* ArrayDataSource.h */,
+				AE1091081D05B7C70086CFC8 /* ArrayDataSource.m */,
+				AE10910F1D05C1F40086CFC8 /* LeftViewCell+ItemConfigureForCell.h */,
+				AE1091101D05C1F40086CFC8 /* LeftViewCell+ItemConfigureForCell.m */,
+			);
+			name = UITableViewData;
+			sourceTree = "<group>";
+		};
 		AE3CDEC21CFD60880051ECA2 = {
 			isa = PBXGroup;
 			children = (
@@ -135,8 +160,8 @@
 		AE3CDECD1CFD60880051ECA2 /* AnimationDome */ = {
 			isa = PBXGroup;
 			children = (
-				AE3CDF0A1CFFD8260051ECA2 /* Base */,
 				AE3CDF051CFFC9C90051ECA2 /* Animation-PrefixHeader.pch */,
+				AE3CDF0A1CFFD8260051ECA2 /* Base */,
 				AE3CDF041CFFBCA20051ECA2 /* View */,
 				AE3CDED11CFD60880051ECA2 /* AppDelegate.h */,
 				AE3CDED21CFD60880051ECA2 /* AppDelegate.m */,
@@ -199,18 +224,19 @@
 		AE3CDF0A1CFFD8260051ECA2 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				AE3CDF111CFFD8980051ECA2 /* Controller */,
+				AE1091061D05B7620086CFC8 /* UITableViewData */,
+				AE3CDF111CFFD8980051ECA2 /* NavigationController */,
 			);
 			name = Base;
 			sourceTree = "<group>";
 		};
-		AE3CDF111CFFD8980051ECA2 /* Controller */ = {
+		AE3CDF111CFFD8980051ECA2 /* NavigationController */ = {
 			isa = PBXGroup;
 			children = (
 				AE3CDF0E1CFFD8920051ECA2 /* BaseNavigationController.h */,
 				AE3CDF0F1CFFD8920051ECA2 /* BaseNavigationController.m */,
 			);
-			name = Controller;
+			name = NavigationController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +348,7 @@
 				AE3CDEDE1CFD60880051ECA2 /* LaunchScreen.storyboard in Resources */,
 				AE3CDEDB1CFD60880051ECA2 /* Assets.xcassets in Resources */,
 				AE3CDED91CFD60880051ECA2 /* Main.storyboard in Resources */,
+				AE10910E1D05BEEE0086CFC8 /* LeftViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,10 +423,13 @@
 			files = (
 				AE3CDED61CFD60880051ECA2 /* ViewController.m in Sources */,
 				AE3CDF031CFFBC840051ECA2 /* LeftViewController.m in Sources */,
+				AE1091111D05C1F40086CFC8 /* LeftViewCell+ItemConfigureForCell.m in Sources */,
+				AE1091091D05B7C70086CFC8 /* ArrayDataSource.m in Sources */,
 				AE3CDF101CFFD8920051ECA2 /* BaseNavigationController.m in Sources */,
 				AE3CDED31CFD60880051ECA2 /* AppDelegate.m in Sources */,
 				AE3CDF081CFFCDBC0051ECA2 /* CALayerViewController.m in Sources */,
 				AE3CDED01CFD60880051ECA2 /* main.m in Sources */,
+				AE10910D1D05BEEE0086CFC8 /* LeftViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
