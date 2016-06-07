@@ -32,7 +32,7 @@ static NSString * const identifer = @"LeftViewCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _array = [NSArray arrayWithObjects:@"View Animation",@"CALayer Animation", nil];
+    _array = [NSArray arrayWithObjects:@"基础 Animation",@"CALayer Animation", nil];
     
     [self initView];
    

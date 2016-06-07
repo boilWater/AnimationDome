@@ -15,9 +15,10 @@
 @implementation BaseNavigationController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-
 }
+
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
     return UIStatusBarStyleLightContent;

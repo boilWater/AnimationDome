@@ -23,6 +23,8 @@
 		AE3CDF031CFFBC840051ECA2 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3CDF021CFFBC840051ECA2 /* LeftViewController.m */; };
 		AE3CDF081CFFCDBC0051ECA2 /* CALayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3CDF071CFFCDBC0051ECA2 /* CALayerViewController.m */; };
 		AE3CDF101CFFD8920051ECA2 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3CDF0F1CFFD8920051ECA2 /* BaseNavigationController.m */; };
+		AECEB8181D06A77200867ED8 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AECEB8171D06A77200867ED8 /* BaseViewController.m */; };
+		AECEB81C1D06B67900867ED8 /* TitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AECEB81B1D06B67900867ED8 /* TitleButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,10 @@
 		AE3CDF071CFFCDBC0051ECA2 /* CALayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CALayerViewController.m; path = View/CALayerView/CALayerViewController.m; sourceTree = "<group>"; };
 		AE3CDF0E1CFFD8920051ECA2 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseNavigationController.h; path = Base/Controller/BaseNavigationController.h; sourceTree = "<group>"; };
 		AE3CDF0F1CFFD8920051ECA2 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseNavigationController.m; path = Base/Controller/BaseNavigationController.m; sourceTree = "<group>"; };
+		AECEB8161D06A77200867ED8 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = Base/BaseViewController/BaseViewController.h; sourceTree = "<group>"; };
+		AECEB8171D06A77200867ED8 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Base/BaseViewController/BaseViewController.m; sourceTree = "<group>"; };
+		AECEB81A1D06B67900867ED8 /* TitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TitleButton.h; path = Base/BaseButton/TitleButton.h; sourceTree = "<group>"; };
+		AECEB81B1D06B67900867ED8 /* TitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TitleButton.m; path = Base/BaseButton/TitleButton.m; sourceTree = "<group>"; };
 		C12729BBB0FB1879BF79AAC6 /* Pods-AnimationDome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationDome.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationDome/Pods-AnimationDome.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -224,6 +230,8 @@
 		AE3CDF0A1CFFD8260051ECA2 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				AECEB8191D06B63300867ED8 /* UIButton */,
+				AECEB8121D065EF200867ED8 /* UIViewController */,
 				AE1091061D05B7620086CFC8 /* UITableViewData */,
 				AE3CDF111CFFD8980051ECA2 /* NavigationController */,
 			);
@@ -237,6 +245,24 @@
 				AE3CDF0F1CFFD8920051ECA2 /* BaseNavigationController.m */,
 			);
 			name = NavigationController;
+			sourceTree = "<group>";
+		};
+		AECEB8121D065EF200867ED8 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AECEB8161D06A77200867ED8 /* BaseViewController.h */,
+				AECEB8171D06A77200867ED8 /* BaseViewController.m */,
+			);
+			name = UIViewController;
+			sourceTree = "<group>";
+		};
+		AECEB8191D06B63300867ED8 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				AECEB81A1D06B67900867ED8 /* TitleButton.h */,
+				AECEB81B1D06B67900867ED8 /* TitleButton.m */,
+			);
+			name = UIButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +448,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE3CDED61CFD60880051ECA2 /* ViewController.m in Sources */,
+				AECEB81C1D06B67900867ED8 /* TitleButton.m in Sources */,
+				AECEB8181D06A77200867ED8 /* BaseViewController.m in Sources */,
 				AE3CDF031CFFBC840051ECA2 /* LeftViewController.m in Sources */,
 				AE1091111D05C1F40086CFC8 /* LeftViewCell+ItemConfigureForCell.m in Sources */,
 				AE1091091D05B7C70086CFC8 /* ArrayDataSource.m in Sources */,

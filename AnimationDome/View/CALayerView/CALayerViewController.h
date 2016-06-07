@@ -6,8 +6,8 @@
 //  Copyright © 2016年 liangbai. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface CALayerViewController : UIViewController
+@interface CALayerViewController : BaseViewController
 
 @end

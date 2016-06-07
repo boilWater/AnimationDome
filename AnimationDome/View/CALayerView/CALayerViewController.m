@@ -21,23 +21,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self initNavigationCotroller];
-    [self initView];
-    
-}
--(void)initView{
-    self.title = @"CALayer Animation";
-    [self.view setBackgroundColor:[UIColor whiteColor]];
-}
--(void)initNavigationCotroller{
-    UIBarButtonItem *leftBItem = [[UIBarButtonItem alloc] initWithTitle:@"doBack" style:UIBarButtonItemStylePlain target:self action:@selector(doBack)];
-    
-    self.navigationItem.leftBarButtonItem = leftBItem;
 }
 
-
--(void)doBack{
-    [self.navigationController popViewControllerAnimated:YES];
+-(NSString *)controllerTitle{
+    return @"zanhi";
 }
 
 @end
