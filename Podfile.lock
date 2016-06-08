@@ -11,18 +11,21 @@ PODS:
     - MMDrawerController/Core
   - MMDrawerController/Subclass (0.6.0):
     - MMDrawerController/Core
+  - Reveal-iOS-SDK (1.6.2)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
 
 DEPENDENCIES:
   - MMDrawerController (~> 0.6.0)
+  - Reveal-iOS-SDK (~> 1.6.2)
   - SDWebImage (~> 3.7.5)
 
 SPEC CHECKSUMS:
   MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
+  Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
 
-PODFILE CHECKSUM: fab5930f616788da2ef7a0fc9ea7d39fd16ec594
+PODFILE CHECKSUM: 5665a195fb32ca49914e6c9639c1929ae870aa7b
 
 COCOAPODS: 1.0.0

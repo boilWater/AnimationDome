@@ -41,8 +41,8 @@
     
     NSInteger numberItems = _operationArrayTitle.count;
     if (_operationArrayTitle && numberItems > 0) {
-        NSInteger row = numberItems/4 == 0 ? numberItems/4 : numberItems/4+1;
-        UIView *countView = [[UIView alloc] initWithFrame:CGRectMake(0, UISCREEN_HEIGHT - row*50-40, UISCREEN_WITH, row*50+20)];
+        NSInteger row = numberItems%4 == 0 ? numberItems/4 : numberItems/4+1;
+        UIView *countView = [[UIView alloc] initWithFrame:CGRectMake(0, UISCREEN_HEIGHT - (row*50 + 30), UISCREEN_WITH, row*50+30)];
         [self.view addSubview:countView];
         for (int i=0; i<numberItems; i++) {
             TitleButton *button = [[TitleButton alloc] initWithFrame:[self frameForButtonAtIndex:i totalNumber:numberItems] withTitle:[self.operationArrayTitle objectAtIndex:i]];

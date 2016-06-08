@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import <MMDrawerController/MMDrawerController.h>
 #import <MMDrawerController/UIViewController+MMDrawerController.h>
-#import "ViewController.h"
+#import "AffineAnimationController.h"
 #import "LeftViewController.h"
 #import "BaseNavigationController.h"
 
@@ -25,7 +25,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     UIViewController *leftView = [[LeftViewController alloc] init];
-    UIViewController *homeView = [[ViewController alloc] init];
+    UIViewController *homeView = [[AffineAnimationController alloc] init];
     
     UINavigationController *leftNVC = [[BaseNavigationController alloc] initWithRootViewController:leftView];
     UINavigationController *homeNVC = [[BaseNavigationController alloc] initWithRootViewController:homeView];

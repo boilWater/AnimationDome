@@ -16,6 +16,9 @@
 #import "ArrayDataSource.h"
 #import <MMDrawerController/MMDrawerController.h>
 #import <MMDrawerController/UIViewController+MMDrawerController.h>
+#import "GroupAnimationController.h"
+#import "FadeAnimationController.h"
+#import "AffineAnimationController.h"
 
 @interface LeftViewController ()<UITableViewDelegate>
 
@@ -32,7 +35,7 @@ static NSString * const identifer = @"LeftViewCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _array = [NSArray arrayWithObjects:@"基础 Animation",@"CALayer Animation", nil];
+    _array = [NSArray arrayWithObjects:@"UIView 放射动画",@"基础 Animation",@"帧 Animation",@"组合 Animation",@"fade Animation", nil];
     
     [self initView];
    
@@ -63,12 +66,27 @@ static NSString * const identifer = @"LeftViewCell";
     {
         case 0:
         {
-            controller = [[ViewController alloc] init];
+            controller = [[AffineAnimationController alloc] init];
             break;
         }
         case 1:
         {
+            controller = [[ViewController alloc] init];
+            break;
+        }
+        case 2:
+        {
             controller = [[CALayerViewController alloc] init];
+            break;
+        }
+        case 3:
+        {
+            controller = [[GroupAnimationController alloc] init];
+            break;
+        }
+        case 4:
+        {
+            controller = [[FadeAnimationController alloc] init];
             break;
         }
         default:
