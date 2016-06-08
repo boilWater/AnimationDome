@@ -1,2 +1,4 @@
 # AnimationDome
 关于动画的使用，会在UIView和CALayer两个方面对于动画进行相关的实现。
+
+目前AnimationDome实现基本动画，会对动画进行研究给出一些比较好玩更深一些的动画使用方法。
