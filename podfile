@@ -8,4 +8,6 @@ pod 'MMDrawerController', '~> 0.6.0'
 
  pod 'Reveal-iOS-SDK', '~> 1.6.2'
 
+ pod 'pop', '~> 1.0.9'
+
 end

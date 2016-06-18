@@ -22,6 +22,8 @@
 		AE3CDF031CFFBC840051ECA2 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3CDF021CFFBC840051ECA2 /* LeftViewController.m */; };
 		AE3CDF081CFFCDBC0051ECA2 /* CALayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3CDF071CFFCDBC0051ECA2 /* CALayerViewController.m */; };
 		AE3CDF101CFFD8920051ECA2 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3CDF0F1CFFD8920051ECA2 /* BaseNavigationController.m */; };
+		AE5B1A411D1599A600D8FA04 /* UIColor+CustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5B1A401D1599A600D8FA04 /* UIColor+CustomColors.m */; };
+		AE5B1A461D159D8500D8FA04 /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5B1A451D159D8500D8FA04 /* CircleViewController.m */; };
 		AE7BE90B1D07DEDA00903F75 /* GroupAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7BE90A1D07DEDA00903F75 /* GroupAnimationController.m */; };
 		AE7BE90F1D07EDE400903F75 /* FadeAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7BE90E1D07EDE400903F75 /* FadeAnimationController.m */; };
 		AE7BE9131D080EAB00903F75 /* AffineAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7BE9121D080EAB00903F75 /* AffineAnimationController.m */; };
@@ -81,6 +83,10 @@
 		AE3CDF071CFFCDBC0051ECA2 /* CALayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CALayerViewController.m; path = View/CALayerView/CALayerViewController.m; sourceTree = "<group>"; };
 		AE3CDF0E1CFFD8920051ECA2 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseNavigationController.h; path = Base/Controller/BaseNavigationController.h; sourceTree = "<group>"; };
 		AE3CDF0F1CFFD8920051ECA2 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseNavigationController.m; path = Base/Controller/BaseNavigationController.m; sourceTree = "<group>"; };
+		AE5B1A3F1D1599A600D8FA04 /* UIColor+CustomColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+CustomColors.h"; path = "Base/BaseColor/UIColor+CustomColors.h"; sourceTree = "<group>"; };
+		AE5B1A401D1599A600D8FA04 /* UIColor+CustomColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+CustomColors.m"; path = "Base/BaseColor/UIColor+CustomColors.m"; sourceTree = "<group>"; };
+		AE5B1A441D159D8500D8FA04 /* CircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircleViewController.h; path = View/Popping/CircleViewController/CircleViewController.h; sourceTree = "<group>"; };
+		AE5B1A451D159D8500D8FA04 /* CircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircleViewController.m; path = View/Popping/CircleViewController/CircleViewController.m; sourceTree = "<group>"; };
 		AE7BE9091D07DEDA00903F75 /* GroupAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroupAnimationController.h; path = View/GroupAnimationView/GroupAnimationController.h; sourceTree = "<group>"; };
 		AE7BE90A1D07DEDA00903F75 /* GroupAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GroupAnimationController.m; path = View/GroupAnimationView/GroupAnimationController.m; sourceTree = "<group>"; };
 		AE7BE90D1D07EDE400903F75 /* FadeAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FadeAnimationController.h; path = View/FadeAnimationView/FadeAnimationController.h; sourceTree = "<group>"; };
@@ -228,6 +234,7 @@
 		AE3CDF041CFFBCA20051ECA2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AE5B1A421D159CFA00D8FA04 /* Popping */,
 				AEEAAC371D0ED3F700B1CB3B /* ComplexAnimation */,
 				AE7BE9141D0818AC00903F75 /* BaseAnimation */,
 				AE7BE9101D080E6900903F75 /* AffineAnimation */,
@@ -252,6 +259,7 @@
 		AE3CDF0A1CFFD8260051ECA2 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				AE5B1A3E1D15995600D8FA04 /* BaseColor */,
 				AEEAAC3B1D0ED7F500B1CB3B /* BaseView */,
 				AECEB8191D06B63300867ED8 /* UIButton */,
 				AECEB8121D065EF200867ED8 /* UIViewController */,
@@ -268,6 +276,32 @@
 				AE3CDF0F1CFFD8920051ECA2 /* BaseNavigationController.m */,
 			);
 			name = NavigationController;
+			sourceTree = "<group>";
+		};
+		AE5B1A3E1D15995600D8FA04 /* BaseColor */ = {
+			isa = PBXGroup;
+			children = (
+				AE5B1A3F1D1599A600D8FA04 /* UIColor+CustomColors.h */,
+				AE5B1A401D1599A600D8FA04 /* UIColor+CustomColors.m */,
+			);
+			name = BaseColor;
+			sourceTree = "<group>";
+		};
+		AE5B1A421D159CFA00D8FA04 /* Popping */ = {
+			isa = PBXGroup;
+			children = (
+				AE5B1A431D159D1B00D8FA04 /* Circle */,
+			);
+			name = Popping;
+			sourceTree = "<group>";
+		};
+		AE5B1A431D159D1B00D8FA04 /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				AE5B1A441D159D8500D8FA04 /* CircleViewController.h */,
+				AE5B1A451D159D8500D8FA04 /* CircleViewController.m */,
+			);
+			name = Circle;
 			sourceTree = "<group>";
 		};
 		AE7BE9081D07DE6B00903F75 /* CroupAnimation */ = {
@@ -547,12 +581,14 @@
 				AE3CDF031CFFBC840051ECA2 /* LeftViewController.m in Sources */,
 				AE7BE9131D080EAB00903F75 /* AffineAnimationController.m in Sources */,
 				AEEAAC3A1D0ED47500B1CB3B /* ComplexAnimation.m in Sources */,
+				AE5B1A461D159D8500D8FA04 /* CircleViewController.m in Sources */,
 				AE1091111D05C1F40086CFC8 /* LeftViewCell+ItemConfigureForCell.m in Sources */,
 				AE1091091D05B7C70086CFC8 /* ArrayDataSource.m in Sources */,
 				AE3CDF101CFFD8920051ECA2 /* BaseNavigationController.m in Sources */,
 				AE7BE9191D0819C100903F75 /* ViewController.m in Sources */,
 				AE3CDED31CFD60880051ECA2 /* AppDelegate.m in Sources */,
 				AE3CDF081CFFCDBC0051ECA2 /* CALayerViewController.m in Sources */,
+				AE5B1A411D1599A600D8FA04 /* UIColor+CustomColors.m in Sources */,
 				AEEAAC3E1D0ED8B400B1CB3B /* SaiZiBaseView.m in Sources */,
 				AE3CDED01CFD60880051ECA2 /* main.m in Sources */,
 				AEEAAC361D0D5A2200B1CB3B /* UIImage+ConnerRadousUIImage.m in Sources */,

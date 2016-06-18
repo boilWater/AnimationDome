@@ -20,6 +20,7 @@
 #import "FadeAnimationController.h"
 #import "AffineAnimationController.h"
 #import "ComplexAnimation.h"
+#import "CircleViewController.h"
 
 @interface LeftViewController ()<UITableViewDelegate>
 
@@ -36,7 +37,7 @@ static NSString * const identifer = @"LeftViewCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _array = [NSArray arrayWithObjects:@"UIView 放射动画",@"基础 Animation",@"帧 Animation",@"组合 Animation",@"fade Animation",@"复杂 Animation", nil];
+    _array = [NSArray arrayWithObjects:@"UIView 放射动画",@"基础 Animation",@"帧 Animation",@"组合 Animation",@"fade Animation",@"复杂 Animation",@"popping 圆形动画", nil];
     
     [self initView];
    
@@ -93,6 +94,11 @@ static NSString * const identifer = @"LeftViewCell";
         case 5:
         {
             controller = [[ComplexAnimation alloc] init];
+            break;
+        }
+        case 6:
+        {
+            controller = [[CircleViewController alloc] init];
             break;
         }
         default:
