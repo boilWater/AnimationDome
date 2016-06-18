@@ -28,9 +28,9 @@
 -(void)initMoveView{
     _moveView = [[UIView alloc] initWithFrame:CGRectMake(UISCREEN_WITH/2 - 40, UISCREEN_HEIGHT/2-100, 80, 80)];
     [_moveView setBackgroundColor:[UIColor blueColor]];
-    _moveView.layer.masksToBounds = YES;
-    _moveView.layer.cornerRadius = 20;
+    _moveView.layer.cornerRadius = 10.0f;
     [self.view addSubview:_moveView];
+    
 //    NSLog(@"x:%f, y:%f", _moveView.frame.origin.x, _moveView.frame.origin.y);
 }
 

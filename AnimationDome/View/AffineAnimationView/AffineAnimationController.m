@@ -5,6 +5,15 @@
 //  Created by liangbai on 16/6/8.
 //  Copyright © 2016年 liangbai. All rights reserved.
 //
+/**********************************************************************************
+ *我们可以在仿射动画过程中进行基本的动画设置
+ *（1）基本的转化位，通过设置开始和最后的位置坐标修改transform完成
+ *（2）基本缩放动画，通过设置缩放的比例（默认大小1.0）就可以达到缩放的动画的效果
+ *（3）基本旋转动画，设置旋转的角度Rotation
+ *（4）组合动画只需要设置具体的transform，然后依次进行添加到下一个初始化的transform中会子自动形成组合动画
+ *（5）
+ **********************************************************************************
+ */
 
 #import "AffineAnimationController.h"
 #import "Animation-PrefixHeader.pch"
@@ -69,7 +78,8 @@
 -(void)posationAnimation{
     _moveView.transform = CGAffineTransformIdentity;
     [UIView animateWithDuration:1.0 animations:^{
-        _moveView.transform = CGAffineTransformMakeTranslation(50, 50);
+        CGAffineTransform transform1 =  CGAffineTransformMakeTranslation(50, 50);
+        _moveView.transform =  CGAffineTransformTranslate(transform1, 50, 100);
     }];
 }
 //缩放动画

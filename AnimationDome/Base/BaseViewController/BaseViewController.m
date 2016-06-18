@@ -35,6 +35,7 @@
     _operationArrayTitle = [self operationArrayTitle];
 }
 
+//初始化base界面的按钮控件和放置UIView
 -(void)initView{
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = [self controllerTitle];
@@ -79,6 +80,7 @@
     return @"ControllerTitle";
 }
 -(void)click:(UIButton *)bt{
+    
 }
 
 -(void)doBack{

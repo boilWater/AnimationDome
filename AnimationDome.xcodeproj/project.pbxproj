@@ -28,6 +28,9 @@
 		AE7BE9191D0819C100903F75 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7BE9181D0819C100903F75 /* ViewController.m */; };
 		AECEB8181D06A77200867ED8 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AECEB8171D06A77200867ED8 /* BaseViewController.m */; };
 		AECEB81C1D06B67900867ED8 /* TitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AECEB81B1D06B67900867ED8 /* TitleButton.m */; };
+		AEEAAC361D0D5A2200B1CB3B /* UIImage+ConnerRadousUIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEAAC351D0D5A2200B1CB3B /* UIImage+ConnerRadousUIImage.m */; };
+		AEEAAC3A1D0ED47500B1CB3B /* ComplexAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEAAC391D0ED47500B1CB3B /* ComplexAnimation.m */; };
+		AEEAAC3E1D0ED8B400B1CB3B /* SaiZiBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEAAC3D1D0ED8B400B1CB3B /* SaiZiBaseView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +93,12 @@
 		AECEB8171D06A77200867ED8 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Base/BaseViewController/BaseViewController.m; sourceTree = "<group>"; };
 		AECEB81A1D06B67900867ED8 /* TitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TitleButton.h; path = Base/BaseButton/TitleButton.h; sourceTree = "<group>"; };
 		AECEB81B1D06B67900867ED8 /* TitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TitleButton.m; path = Base/BaseButton/TitleButton.m; sourceTree = "<group>"; };
+		AEEAAC341D0D5A2200B1CB3B /* UIImage+ConnerRadousUIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ConnerRadousUIImage.h"; path = "Utilty/CornerRadious/UIImage+ConnerRadousUIImage.h"; sourceTree = "<group>"; };
+		AEEAAC351D0D5A2200B1CB3B /* UIImage+ConnerRadousUIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ConnerRadousUIImage.m"; path = "Utilty/CornerRadious/UIImage+ConnerRadousUIImage.m"; sourceTree = "<group>"; };
+		AEEAAC381D0ED47500B1CB3B /* ComplexAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComplexAnimation.h; path = View/ComplexAnimation/ComplexAnimation.h; sourceTree = "<group>"; };
+		AEEAAC391D0ED47500B1CB3B /* ComplexAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComplexAnimation.m; path = View/ComplexAnimation/ComplexAnimation.m; sourceTree = "<group>"; };
+		AEEAAC3C1D0ED8B400B1CB3B /* SaiZiBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SaiZiBaseView.h; path = Base/BaseView/SaiZiBaseView.h; sourceTree = "<group>"; };
+		AEEAAC3D1D0ED8B400B1CB3B /* SaiZiBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SaiZiBaseView.m; path = Base/BaseView/SaiZiBaseView.m; sourceTree = "<group>"; };
 		C12729BBB0FB1879BF79AAC6 /* Pods-AnimationDome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationDome.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationDome/Pods-AnimationDome.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,6 +184,7 @@
 		AE3CDECD1CFD60880051ECA2 /* AnimationDome */ = {
 			isa = PBXGroup;
 			children = (
+				AEEAAC2F1D0D58C000B1CB3B /* Utily */,
 				AE3CDF051CFFC9C90051ECA2 /* Animation-PrefixHeader.pch */,
 				AE3CDF0A1CFFD8260051ECA2 /* Base */,
 				AE3CDF041CFFBCA20051ECA2 /* View */,
@@ -218,6 +228,7 @@
 		AE3CDF041CFFBCA20051ECA2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AEEAAC371D0ED3F700B1CB3B /* ComplexAnimation */,
 				AE7BE9141D0818AC00903F75 /* BaseAnimation */,
 				AE7BE9101D080E6900903F75 /* AffineAnimation */,
 				AE7BE90C1D07ED9400903F75 /* FadeAnimation */,
@@ -241,6 +252,7 @@
 		AE3CDF0A1CFFD8260051ECA2 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				AEEAAC3B1D0ED7F500B1CB3B /* BaseView */,
 				AECEB8191D06B63300867ED8 /* UIButton */,
 				AECEB8121D065EF200867ED8 /* UIViewController */,
 				AE1091061D05B7620086CFC8 /* UITableViewData */,
@@ -310,6 +322,41 @@
 				AECEB81B1D06B67900867ED8 /* TitleButton.m */,
 			);
 			name = UIButton;
+			sourceTree = "<group>";
+		};
+		AEEAAC2F1D0D58C000B1CB3B /* Utily */ = {
+			isa = PBXGroup;
+			children = (
+				AEEAAC301D0D591C00B1CB3B /* CornerRadiusUIImage */,
+			);
+			name = Utily;
+			sourceTree = "<group>";
+		};
+		AEEAAC301D0D591C00B1CB3B /* CornerRadiusUIImage */ = {
+			isa = PBXGroup;
+			children = (
+				AEEAAC341D0D5A2200B1CB3B /* UIImage+ConnerRadousUIImage.h */,
+				AEEAAC351D0D5A2200B1CB3B /* UIImage+ConnerRadousUIImage.m */,
+			);
+			name = CornerRadiusUIImage;
+			sourceTree = "<group>";
+		};
+		AEEAAC371D0ED3F700B1CB3B /* ComplexAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				AEEAAC381D0ED47500B1CB3B /* ComplexAnimation.h */,
+				AEEAAC391D0ED47500B1CB3B /* ComplexAnimation.m */,
+			);
+			name = ComplexAnimation;
+			sourceTree = "<group>";
+		};
+		AEEAAC3B1D0ED7F500B1CB3B /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				AEEAAC3C1D0ED8B400B1CB3B /* SaiZiBaseView.h */,
+				AEEAAC3D1D0ED8B400B1CB3B /* SaiZiBaseView.m */,
+			);
+			name = BaseView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -499,13 +546,16 @@
 				AECEB8181D06A77200867ED8 /* BaseViewController.m in Sources */,
 				AE3CDF031CFFBC840051ECA2 /* LeftViewController.m in Sources */,
 				AE7BE9131D080EAB00903F75 /* AffineAnimationController.m in Sources */,
+				AEEAAC3A1D0ED47500B1CB3B /* ComplexAnimation.m in Sources */,
 				AE1091111D05C1F40086CFC8 /* LeftViewCell+ItemConfigureForCell.m in Sources */,
 				AE1091091D05B7C70086CFC8 /* ArrayDataSource.m in Sources */,
 				AE3CDF101CFFD8920051ECA2 /* BaseNavigationController.m in Sources */,
 				AE7BE9191D0819C100903F75 /* ViewController.m in Sources */,
 				AE3CDED31CFD60880051ECA2 /* AppDelegate.m in Sources */,
 				AE3CDF081CFFCDBC0051ECA2 /* CALayerViewController.m in Sources */,
+				AEEAAC3E1D0ED8B400B1CB3B /* SaiZiBaseView.m in Sources */,
 				AE3CDED01CFD60880051ECA2 /* main.m in Sources */,
+				AEEAAC361D0D5A2200B1CB3B /* UIImage+ConnerRadousUIImage.m in Sources */,
 				AE7BE90B1D07DEDA00903F75 /* GroupAnimationController.m in Sources */,
 				AE10910D1D05BEEE0086CFC8 /* LeftViewCell.m in Sources */,
 			);
